@@ -275,7 +275,7 @@ extension NFX {
         self.nfxMenuItem.target = self
         self.nfxMenuItem.action = "motionDetected"
         self.nfxMenuItem.keyEquivalent = "n"
-        self.nfxMenuItem.keyEquivalentModifierMask = Int(NSEventModifierFlags.CommandKeyMask.rawValue | NSEventModifierFlags.ShiftKeyMask.rawValue)
+        // self.nfxMenuItem.keyEquivalentModifierMask = Int(NSEventModifierFlags.CommandKeyMask.rawValue | NSEventModifierFlags.ShiftKeyMask.rawValue)
     }
     
     private func addNetfoxToMainMenu() {
