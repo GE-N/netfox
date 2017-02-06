@@ -13,7 +13,7 @@ DESC
   s.author           = "Christos Kasketis"
   s.source           = { :git => "https://github.com/GE-N/netfox.git", :branch => "fix/swift23" }
 
-  s.platform     = :ios, '8.0'
+  s.platform     = :ios, '9.2'
   s.platform     = :osx, '10.11'
   s.requires_arc = true
   s.source_files = "netfox/Core/*.swift"
