@@ -12,7 +12,7 @@ import MessageUI
 
 class NFXSettingsController_iOS: NFXSettingsController, UITableViewDelegate, UITableViewDataSource, MFMailComposeViewControllerDelegate {
 
-    var nfxURL = "https://github.com/kasketis/netfox"
+    // var nfxURL = "https://github.com/kasketis/netfox"
     
     var tableView: UITableView = UITableView()
     
