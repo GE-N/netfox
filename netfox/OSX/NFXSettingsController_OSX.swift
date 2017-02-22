@@ -72,7 +72,7 @@ class NFXSettingsController_OSX: NFXSettingsController, NSTableViewDataSource, N
         return tableData.count
     }
     
-    func tableView(tableView: NSTableView, viewForTableColumn tableColumn: NSTableColumn?, row: Int) -> NSView? {
+    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         guard let cell = tableView.make(withIdentifier: cellIdentifier, owner: nil) as? NFXResponseTypeCell_OSX else {
             return nil
         }
@@ -82,11 +82,11 @@ class NFXSettingsController_OSX: NFXSettingsController, NSTableViewDataSource, N
         cell.activeCheckbox.state = filters[row] ? NSOnState : NSOffState
         cell.activeCheckbox.tag = row
         cell.activeCheckbox.target = self
-        cell.activeCheckbox.action = "toggleResponseTypeClicked:"
+        cell.activeCheckbox.action = Selector("toggleResponseTypeClicked:")
         return cell
     }
     
-    func tableView(tableView: NSTableView, shouldSelectRow: Int) -> Bool {
+    func tableView(_ tableView: NSTableView, shouldSelectRow: Int) -> Bool {
         return false
     }
     
